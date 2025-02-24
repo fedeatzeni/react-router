@@ -1,6 +1,11 @@
+import Header from "../components/Header.jsx"
+
 export default function PostPage() {
 
     return (
-        <h1>Posts</h1>
+        <>
+            <Header />
+            <h2>Posts</h2>
+        </>
     )
 }

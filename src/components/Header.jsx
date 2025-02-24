@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 const navLinks = [
     { id: 1, text: "Home", url: "/" },
     { id: 2, text: "Chi Siamo", url: "/about_us" },
@@ -8,7 +10,13 @@ export default function Header() {
 
     return (
         <header>
+            <h1>Blog</h1>
 
+            <nav>
+                {navLinks.map(el => <NavLink key={el.id} to={el.url}>{el.text}</NavLink>)}
+            </nav>
+
+            <div>Login</div>
         </header>
     )
 }

@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aqua;
+}
+
+header nav a{
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+header nav a.active{
+  padding: 10px 0;
+  background-color: aquamarine;
+}

@@ -1,6 +1,11 @@
+import Header from "../components/Header.jsx"
+
 export default function AboutPage() {
 
     return (
-        <h1>About</h1>
+        <>
+            <Header />
+            <h2>Chi Siamo</h2>
+        </>
     )
 }
