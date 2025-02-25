@@ -39,3 +39,9 @@ header nav a.active {
 .post img {
   max-height: 400px;
 }
+
+.post a {
+  color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+  padding: 0 10px;
+}
