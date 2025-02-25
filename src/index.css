@@ -21,3 +21,11 @@ header nav a.active{
   padding: 10px 0;
   background-color: aquamarine;
 }
+
+.post img {
+  max-height: 200px;
+}
+
+.post button {
+  margin-bottom: 20px;
+}

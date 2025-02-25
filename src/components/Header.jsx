@@ -4,6 +4,7 @@ const navLinks = [
     { id: 1, text: "Home", url: "/" },
     { id: 2, text: "Chi Siamo", url: "/about_us" },
     { id: 3, text: "Posts", url: "/posts" },
+    { id: 4, text: "PostForm", url: "/post_form" },
 ]
 
 export default function Header() {

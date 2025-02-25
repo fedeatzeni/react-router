@@ -7,6 +7,7 @@ import DefaultLayout from "./layouts/DefaultLayout.jsx";
 import HomePage from "./pages/HomePage.jsx"
 import AboutPage from "./pages/AboutPage.jsx"
 import PostPage from "./pages/PostPage.jsx"
+import CreatePost from "./pages/CreatePost.jsx"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<HomePage />} ></Route>
             <Route path="/about_us" element={<AboutPage />} ></Route>
             <Route path="/posts" element={<PostPage />} ></Route>
+            <Route path="/post_form" element={<CreatePost />} ></Route>
           </Route>
         </Routes>
       </BrowserRouter>
