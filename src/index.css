@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,21 +11,31 @@ header {
   background-color: aqua;
 }
 
-header nav a{
+header nav a {
   margin: 10px;
   text-decoration: none;
   color: black;
 }
 
-header nav a.active{
+header nav a.active {
   padding: 10px 0;
   background-color: aquamarine;
 }
 
-.post img {
+.posts img {
   max-height: 200px;
 }
 
-.post button {
+.posts button {
   margin-bottom: 20px;
+}
+
+.posts a {
+  color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+  padding: 0 10px;
+}
+
+.post img {
+  max-height: 400px;
 }

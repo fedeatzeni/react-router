@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function PostList() {
 
@@ -28,7 +29,7 @@ export default function PostList() {
 
     return (
         <>
-            <div className="post">
+            <div className="posts">
                 {/* se non ci sono posto */}
                 {articles.length === 0 && <h2>Non ci sono post</h2>}
                 {articles.map((el) =>
@@ -38,6 +39,9 @@ export default function PostList() {
                         <div>{el.content}</div>
                         <img src={el.image} alt={el.title} />
                         <div>{el.tags.join(", ")}</div>
+
+                        <Link to={`/posts/${el.id}`}>Vai al Post</Link>
+                        <br />
                         <button onClick={() => removeArticle(el.id)}>elimina</button>
                     </div>
                 )}
